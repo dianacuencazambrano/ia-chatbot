@@ -9,10 +9,10 @@ app.use(cors())
 
 //Establecemos conexión con la BD
 const pool = db.createPool({
-    host: "34.74.221.96",
-    database: "chaide",
-    user: "diana",
-    password: "pPm42AN@YUre"
+    host: "",
+    database: "",
+    user: "",
+    password: """
 });
 
 pool.getConnection(function (err, connection) {
