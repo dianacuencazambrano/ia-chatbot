@@ -18,6 +18,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/', require('./src/routes'));
 
 //Puerto
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Listening on port ${port}`)
 });
