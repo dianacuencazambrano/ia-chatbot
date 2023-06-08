@@ -4,7 +4,7 @@ const router = Router();
 
 const { bot } = require('../src/bot')
 
-router.post('/chaide-clientes', async (req, res) => {
+router.post('/chatbot', async (req, res) => {
     let data = await bot(req);
     res.json(data);
 })
@@ -13,7 +13,7 @@ router.post('/chaide-clientes', async (req, res) => {
 
 router.get('/', async function(req, res) {
     try {
-        res.send("Bot Chaide Clientes");
+        res.send("Bot IA");
     } catch (error) {
         return res.json({ error:true, message:error });
     }
