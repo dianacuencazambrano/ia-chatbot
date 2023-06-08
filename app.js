@@ -7,7 +7,7 @@ const cors = require('cors')
 
 //Instanciamos el servidor en un puerto local
 const app = express()
-const port = process.env.PORT
+const port = 3000
 
 //Declaración de middlewares
 app.use(cors())
