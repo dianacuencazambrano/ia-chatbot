@@ -1,6 +1,5 @@
 require('dotenv').config();
 const { getNameOnly, validateSession } = require('../src/helper');
-const { getTiendas, getCliente, insertCliente, updateCliente } = require('../src/queries');
 
 const { textResponse, quickResponse } = require('../src/responses');
 const {
