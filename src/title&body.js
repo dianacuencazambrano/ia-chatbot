@@ -1,99 +1,53 @@
 
-const generalChaide = {
-    buendia: 'Buen día, gracias por escribirnos! Para un mejor asesoramiento, indíquenos cuál es su nombre por favor:',
-    bienvenida: 'Hola ',
-    bienvenida1: '👋\n\nTienda ',
-    bienvenida2: ' te da la bienvenida.\n\nPor favor, escoge una opción para empezar. 😉',
-    distribuidor: 'Este número es dedicado para clientes. Si desea obtener información como distribuidor presione el siguiente link:\n\n👉🏻 https://walink.co/826e14',
-    conGusto: 'Con gusto ',
-    escogerOpcion: '. Por favor, escoge la opción que deseas consultar:',
-    asesor: 'De acuerdo, En unos minutos uno de nuestros asesores de la tienda ',
-    asesor1: ' se contactará con usted. 😉'
+const soledad = {
+    inicio: 'Estas en una situación complicada, tranquilo, aquí estoy para escucharte y darte unos cuantos consejos. ¿Que consideras es lo que te hace sentir solo en este momento?',
+    familia: 'Entiendo las situaciones familiares o la ausencia de un familiar puede llegar a ser muy difícil. Puedes intentar hablar con un profesional sobre lo que te aqueja, al inicio puede ser difícil pero después de un tiempo esto te llevara a una mejoría, en otro caso hablar con alguien cercano o de confianza siempre es buena idea. Pero no te preocupes, yo estoy aquí y puedo escucharte!',
+    amigos: 'Oh ya veo, bueno si deseas puedes intentar buscar grupos de interés común en línea, ya sea de las series que te gustan o de tus pasatiempos mas amados. También puedes tomar cursos o clases en línea de algo que te gusta, ahí podrás interactuar con varios tipos de gente e intentar crear un ambiente mas cómodo para ti.',
+    pareja: 'Una situación difícil, pero recuerda que primero debes de reflexionar y cuidarte a ti mismo para poder centrarte en alguien mas. Así que siempre vela primero por tu bienestar. Puedes intentar distraerte participando en actividades que te gusten, pasatiempos que adores. Y no olvides que si necesitas algo más peudes decírmelo!'
 }
 
-const asesoriaVentas = {
-    colchonIdeal: ', ingrese a este link para que nuestro asesor de descanso le guíe en su compra:\n👉🏻 https://chaide.com/advisor\n\nSi ya conoce nuestros productos encuéntrelos aquí:\n👉🏻 https://www.chaide.com/filter/product?name=Colchones',
-    productos: ', ¿Qué producto le interesa?',
-    dondeComprar: 'Con gusto ',
-    dondeComprar1: ', estamos a su disposición en nuestra página web:\n👉🏻 https://www.chaide.com/\n\nLe sugerimos el siguiente video explicativo para su compra en línea:\n👉🏻 https://youtu.be/B2rMLZQT4o8\n\nO puede visitar alguna de nuestras tiendas directas:\n👉🏻 https://www.chaide.com/local',
-    comoPagar: 'Es muy sencillo ',
-    comoPagar1: ', aceptamos las siguientes formas de pago:\n\n▫Efectivo\n▫Tarjetas de crédito\n▫Transferencia bancaria.\n\n¿Desea realizar una compra? visítenos en:\n👉🏻 https://www.chaide.com/\n\nO puede visitar alguna de nuestras tiendas:\n👉🏻 https://www.chaide.com/local\n\nO comuníquese al *1800 CHAIDE (242433)*',
+const estudiantil = {
+    inicio: 'Entiendo, ¿haz dormido entre 7 y 8 horas últimamente?',
+    dormirSi: 'Perfecto! El dormir entre 7 y 8 horas es una gran factor de ayuda a tu salud mental tenlo en cuenta siempre.\n\nCuéntame, el hobby que me comentaste anteriormente, ¿lo practicas con regularidad?',
+    dormirNo: 'Recuerda que las horas de sueño pueden afectar rendimiento, recuerda darte el tiempo necesario para que tu cuerpo descanse y pueda seguir en tu día a día.\n\nCuéntame, el hobby que me comentaste anteriormente, ¿lo practicas con regularidad?',
+    hobby: 'Entiendo, siempre te recomendaré que tengas una actividad para distraerte y dejar de pensar en aquello que te aqueja, recuerda siempre practicar tu pasatiempo con regularidad!',
 }
 
-const productos = {
-    almohadas: ', revise aquí nuestra variedad de almohadas:\n👉🏻 https://www.chaide.com/filter/product?name=Almohadas',
-    protectores: ', revise aquí nuestra variedad de protectores:\n👉🏻 https://www.chaide.com/filter/product?name=Protectores',
-    ropaCama: ', revise aquí nuestra variedad de ropa de cama:\n👉🏻 https://www.chaide.com/filter/product?name=Ropa%20de%20cama',
-    mueblesDormitorio: ', revise aquí nuestra variedad de muebles de dormitorio:\n👉🏻 https://www.chaide.com/filter/product?name=Muebles%20de%20dormitorio',
-    bebes: ', revise aquí nuestra variedad de artículos para bebés:\n👉🏻 https://www.chaide.com/filter/product?name=Beb%C3%A9s',
-    sofasCama: ', revise aquí nuestra variedad de sofás cama:\n👉🏻 https://www.chaide.com/filter/product?name=Sof%C3%A1s%20cama',
-    lineaEspumas: ', revise aquí nuestra variedad de líneas de espuma:\n👉🏻 https://www.chaide.com/filter/product?name=L%C3%ADnea%20de%20Espumas',
-    lineaHotelera: ', revise aquí nuestra variedad de productos para línea hotelera:\n👉🏻 https://www.chaide.com/filter/product?name=L%C3%ADnea%20Hotelera',
-    lneaHospitalaria: ', revise aquí nuestra variedad de productos para línea hospitalaria:\n👉🏻 https://www.chaide.com/filter/product?name=L%C3%ADnea%20Hospitalaria',
-    colchones: ', ingrese a este link para que nuestro asesor de descanso le guíe en su compra:\n👉🏻 https://chaide.com/advisor\n\nSi ya conoce nuestros productos encuéntrelos aquí:\n👉🏻 https://www.chaide.com/filter/product?name=Colchones',
-    bases: ', revise aquí nuestra variedad de bases:\n👉🏻 https://www.chaide.com/filter/product?name=Bases',
-    caressa: 'Colchón de alta gama con Memory Foam, Gel Infused y diseño de tela exclusivo con propiedades antialergicas. Para más información, presione aquí:\n\n👉🏻 https://www.chaide.com/product/product?name=Colch%C3%B3n%20Caressa%20&size=2%20plazas:%20135%20cm%20x%20190%20cmname=Caressa%20',
-    mascotas: ', revise aquí nuestra variedad de artículos para mascotas:\n👉🏻 https://www.chaide.com/filter/product?name=Mascotas'
+const laborales = {
+    inicio: 'Oh ya veo, lo primero que debemos de hacer es identificar el origen de tu problema exactamente, ya sea una falta de organización en tus labores, falta de concentración y hasta los sentimientos que te provoca tus actuales labores, primero coméntame ¿Realizas algún deporte o actividad física?',
+    deporteSi: 'Genial! El practicar un deporte con frecuencia ayudara a mantener una mejor salud mental y física y te ayudará afrontar de mejor manera problemas de ansiedad.\n\nQuisiera saber un poco más de cómo organizas tu tiempo, ¿utilizas alguna agenda o método de organización?',
+    deporteNo: 'Puedes intentar practicar deportes de actividad física como son el fútbol, basquet, natación, baile, entre otros. Esto te ayudará a tu estado mental y físico.\n\nQuisiera saber un poco más de cómo organizas tu tiempo, ¿utilizas alguna agenda o método de organización?',
+    organizacionSi: 'Me agrada mucho que organices tu tiempo a tu manera, aún así recuerda:\n\n▫ Establece prioridad\n▫ Se puntual con tus propias met\n▫ Saber decir que *no*\n▫ Hablar con alguien cercano siempre ayuda!\n\nCuéntame, ¿haz hablado sobre tus problemas con gente allegada a ti?',
+    organizacionNo: 'No hay problema, sin embargo, mantener un itinerario puede ser beneficioso. Aún así, recuerda:\n\n▫ Establece prioridad\n▫ Se puntual con tus propias met\n▫ Saber decir que *no*\n▫ Hablar con alguien cercano siempre ayuda!\n\nCuéntame, ¿haz hablado sobre tus problemas con gente allegada a ti?',
+    hablarSi: 'Perfecto! Que tengas alguien con quien hablar y contarle tus problemas es algo muy útil. Además, podrías intentar comunicar situaciones de crisis a tu empleador, esto para poder afrontarlas con apoyo y tiempo en tu trabajo.',
+    hablarNo: 'Oh ya veo, debe ser difícil. Aún así, considera contarle tu situación a alguien de confianza ya que puede ayudarte a que situaciones ansiosas puedan ser más llevaderas y tomen menos tiempo del que crees.',
 }
 
-const opcionesMenu = {
-    entregas: 'Recuerde ',
-    entregas1: ', si realizó su compra por la web, en 48 horas uno de nuestros agentes se comunicará con usted. En este link encontrará los términos y condiciones de entrega:\n👉🏻 https://chaide.mippya.com/Terminos_condiciones_entrega.pdf',
-    catalogo: ', en este link encontrará el catálogo digital de Chaide:\n👉🏻 https://online.pubhtml5.com/cgqa/msth/index.html',
-    garantias: ', conozca los pasos para tramitar su garantía:\n👉🏻 https://chaide.mippya.com/garantia.jpg',
-    reclamos: 'Su opinión es muy importante para nosotros ',
-    reclamos1: '. Para gestionar sus reclamos usted puede: \n\n1. Escribir un correo a servicioalColaborador@chaide.com y le responderemos a la brevedad posible. \n\n2. Llamar al *1800 CHAIDE (242433)* para ser atendido por un agente.',
-    promociones: ', tenemos las siguientes promociones para usted:\n👉🏻 https://www.chaide.com/filter/product?name=Promociones',
-    innovaciones: ', las tecnologías aplicadas a nuestros productos son:\n\nTecnología Kulkote: https://www.youtube.com/watch?v=05ypY-Bl9E0\n\nQué es memory foam? https://www.youtube.com/watch?v=0ehknVTiSkk\n\nTecnología Feran Ice: https://youtu.be/MtNSkifIhwI\n\nPerfect Temp Copper: https://www.youtube.com/watch?v=h9yRr1n8zXA\n\nGel Infused: https://youtu.be/OX4bKLiLgUc\n\nPocket Coils: https://youtu.be/0mBcQL6RZxM\n\nSeaqual: https://www.youtube.com/watch?v=ugxC-UMHuEc\n\nChaide Pocket: https://youtu.be/MwOJ6GLrOyg\n\nCamas ajustables Tempur: https://youtu.be/3f79sTXupfw\n\nChaide Carbono Neutro: https://youtu.be/k8MHtyxBkMw\n\nTela Anti Ácaros?  https://chaide.mippya.com/Acaros_Polvo.mp4',
+const social = {
+    inicio: 'Entiendo, por favor, intenta lo siguiente para poder mantener llevar esta situación:\n\n▫ Inhala profundamente por la nariz\n▫ Mantén el aire dentro de tu diafragma la mayor cantidad de tiempo que puedas.\n▫ Exhala lentamente por la bocaRealizalo cuantas veces lo necesites.\n\nDime, ¿fue de ayuda?',
+    funcionoSi: 'Genial! Me alegro que ya te encuentres mejor, si la sensación regresa puedes comentarme sin ningún problema!',
+    funcionoNo: 'Entiendo quizas una técnica de respiración no fue suficiente. Pueden intentar lo siguiente:\n\n▫ Busca 5 objetos con la mirada y piensa sus nombres.\n▫ Toca 4 objetos aleatorios en la habitación.\n▫ Centrate en los 3 sonidos que más llamen tu atención.\n▫ Manten la respiración 2 veces .\n▫ Di en voz alta 1 cosa que te haga feliz.\n\nPuedes repetirlos cada vez que sea necesario y recuerda que estoy aqui para ayudarte!',
 }
 
-let opMenuPrincipal = [
-    'Nuestro Catálogo',
-    'Contactar Asesor',
-    'Nuestra tecnología',
-    'Asesoría y Ventas',
-    'Garantías',
-    'Reclamos'
+let opSiNo = [
+    "Si",
+    "No",
 ]
 
-let opAsesoriaVentas = [
-    'Mi colchón ideal',
-    'Productos',
-    'Dónde puedo comprar',
-    'Cómo puedo pagar',
-    'Hablar con un asesor'
-]
-
-let opProductos = [
-    "Almohadas",
-    "Protectores",
-    "Ropa de cama",
-    "Muebles dormitorio",
-    "Bebés",
-    "Sofás cama",
-    "Línea de espumas",
-    "Línea hotelera",
-    "Línea hospitalaria",
-    "Colchones"
-]
-
-let opPreciosPromociones = [
-    "Precios",
-    "Promociones",
-    "Cotizar"
+let opSocial = [
+    "Me ayudó",
+    "Sigo igual",
 ]
 
 
 module.exports = {
-    generalChaide,
-    asesoriaVentas,
-    productos,
-    opcionesMenu,
+    soledad,
+    laborales,
+    estudiantil,
+    social,
 
-    opMenuPrincipal,
-    opAsesoriaVentas,
-    opProductos,
-    opPreciosPromociones
+    opSiNo,
+    opSocial
 }
 
 

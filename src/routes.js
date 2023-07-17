@@ -13,7 +13,7 @@ router.post('/chatbot', async (req, res) => {
 
 router.get('/', async function(req, res) {
     try {
-        res.send("Bot IA funcionando");
+        res.send("Bot IA 1");
     } catch (error) {
         return res.json({ error:true, message:error });
     }
