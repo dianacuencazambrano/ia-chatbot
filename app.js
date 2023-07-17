@@ -7,7 +7,7 @@ const cors = require('cors')
 
 //Instanciamos el servidor en un puerto local
 const app = express()
-const port = process.env.PORT
+const port = 3000
 
 //Declaración de middlewares
 app.use(cors())
@@ -18,6 +18,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/', require('./src/routes'));
 
 //Puerto
-app.listen(port, () => {
+app.listen(port, '173.249.60.240', () => {
   console.log(`Listening on port ${port}`)
 });
