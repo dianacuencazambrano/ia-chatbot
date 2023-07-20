@@ -1,6 +1,4 @@
 require('dotenv').config();
-const { getNameOnly, validateSession } = require('../src/helper');
-
 const { textResponse, quickResponse } = require('../src/responses');
 const {
     soledad,
@@ -19,10 +17,10 @@ async function bot(request) {
     console.log('\n\nIntent: ' + intent);
 
     switch (intent) {
-        /* case 'Default Welcome Intent':
-            title = 'Buen día, gracias por escribirnos! Para un mejor asesoramiento, indíquenos cuál es su nombre por favor: ';
-            response = new Array(textResponse(title));
-            break; */
+        case 'ansiedad_social':
+            title = social.inicio;
+            response = new Array(quickResponse(title, opSocial));
+            break;
         case 'ansiedad_estudiantil':
             title = estudiantil.inicio;
             response = new Array(quickResponse(title, opSiNo));
@@ -67,10 +65,7 @@ async function bot(request) {
             title = soledad.pareja;
             response = new Array(textResponse(title));
             break;
-        case 'ansiedad_social':
-            title = social.inicio;
-            response = new Array(quickResponse(title, opSocial));
-            break;
+        
         case 'funciona':
             title = social.funcionoSi;
             response = new Array(textResponse(title));
