@@ -24,7 +24,7 @@ const laborales = {
 }
 
 const social = {
-    inicio: 'Entiendo, por favor, intenta lo siguiente para poder mantener llevar esta situación:\n\n▫ Inhala profundamente por la nariz\n▫ Mantén el aire dentro de tu diafragma la mayor cantidad de tiempo que puedas.\n▫ Exhala lentamente por la bocaRealizalo cuantas veces lo necesites.\n\nDime, ¿fue de ayuda?',
+    inicio: 'Entiendo, por favor, intenta lo siguiente para poder mantener llevar esta situación:\n\n▫ Respira profundamente por la nariz\n▫ Mantén el aire dentro de tu diafragma la mayor cantidad de tiempo que puedas.\n▫ Exhala lentamente por la bocaRealizalo cuantas veces lo necesites.\n\nDime, ¿fue de ayuda?',
     funcionoSi: 'Genial! Me alegro que ya te encuentres mejor, si la sensación regresa puedes comentarme sin ningún problema!',
     funcionoNo: 'Entiendo quizas una técnica de respiración no fue suficiente. Pueden intentar lo siguiente:\n\n▫ Busca 5 objetos con la mirada y piensa sus nombres.\n▫ Toca 4 objetos aleatorios en la habitación.\n▫ Centrate en los 3 sonidos que más llamen tu atención.\n▫ Manten la respiración 2 veces .\n▫ Di en voz alta 1 cosa que te haga feliz.\n\nPuedes repetirlos cada vez que sea necesario y recuerda que estoy aqui para ayudarte!',
 }
